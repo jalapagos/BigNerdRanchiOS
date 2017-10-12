@@ -12,7 +12,7 @@
         <!--Conversion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -65,6 +65,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="iWs-XV-pT3" firstAttribute="top" secondItem="zeU-tU-olI" secondAttribute="bottom" constant="8" id="5Wi-fu-YBa"/>
                             <constraint firstItem="zeU-tU-olI" firstAttribute="centerX" secondItem="iWs-XV-pT3" secondAttribute="centerX" id="8Dd-E8-cP2"/>
@@ -83,12 +84,22 @@
                             <constraint firstItem="Diz-d7-5Sp" firstAttribute="leading" secondItem="vnj-2k-BB0" secondAttribute="leading" id="uNH-d7-S0y"/>
                             <constraint firstItem="vnj-2k-BB0" firstAttribute="top" secondItem="Tvq-pt-to9" secondAttribute="bottom" constant="55" id="ygf-Tl-lJi"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="s0H-La-O8q" appends="YES" id="CKh-du-tPc"/>
+                            <outletCollection property="gestureRecognizers" destination="s0H-La-O8q" appends="YES" id="YyV-FQ-Bxt"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="zeU-tU-olI" id="SN9-02-Fid"/>
+                        <outlet property="textField" destination="Tvq-pt-to9" id="1XM-sD-6No"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="s0H-La-O8q">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="ho8-wl-Dt0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
