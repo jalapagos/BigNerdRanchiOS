@@ -14,6 +14,7 @@
 		CBC214F91FD655330023576A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC214F71FD655330023576A /* LaunchScreen.storyboard */; };
 		CBC215041FD655330023576A /* BigNerdRanchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC215031FD655330023576A /* BigNerdRanchTests.swift */; };
 		CBC2150F1FD655330023576A /* BigNerdRanchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2150E1FD655330023576A /* BigNerdRanchUITests.swift */; };
+		CBC2151D1FD661290023576A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC2151C1FD661290023576A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CBC2150A1FD655330023576A /* BigNerdRanchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigNerdRanchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC2150E1FD655330023576A /* BigNerdRanchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigNerdRanchUITests.swift; sourceTree = "<group>"; };
 		CBC215101FD655330023576A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC2151C1FD661290023576A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CBC214F51FD655330023576A /* Assets.xcassets */,
 				CBC214F71FD655330023576A /* LaunchScreen.storyboard */,
 				CBC214FA1FD655330023576A /* Info.plist */,
+				CBC2151C1FD661290023576A /* Images.xcassets */,
 			);
 			path = BigNerdRanch;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC214F91FD655330023576A /* LaunchScreen.storyboard in Resources */,
+				CBC2151D1FD661290023576A /* Images.xcassets in Resources */,
 				CBC214F61FD655330023576A /* Assets.xcassets in Resources */,
 				CBC214F41FD655330023576A /* Main.storyboard in Resources */,
 			);
@@ -426,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 828F226BJD;
 				INFOPLIST_FILE = BigNerdRanch/Info.plist;
@@ -441,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 828F226BJD;
 				INFOPLIST_FILE = BigNerdRanch/Info.plist;
